@@ -1,0 +1,110 @@
+body{
+	background: url("background.jpg");
+	background-size: 100%;
+	margin: 0;
+}
+
+header{
+	background-color: grey;
+	background: url("head.png");
+	background-repeat:repeat-x;
+}
+
+h3{
+	font-size: 40px;
+	font-weight: 900;
+	color: white;
+	font-style: arial;
+}
+
+span {
+	color: red;
+}
+
+figure {
+	float: left;
+	margin: 0px;
+	background-color: white;
+
+	margin: 10px 20px 10px 0;
+}
+
+figcaption {
+	background-color: white;
+	color: grey;
+	width: 300px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+
+}
+
+img {
+	margin: 0px;
+}
+
+#mid_header{
+	width: 1257px;
+	margin: 0 auto;
+}
+
+#logo{
+	margin-right: 30%;
+	float: left;
+	height: 63px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 23px 10px 24px 10px;
+	float: left;
+	vertical-align: top;
+	height: 100%;
+}
+
+a:hover{
+	background-color: #1e1e1e;
+	color: white;
+}
+
+#main {
+	margin-left: 50px;
+}
+
+
+#main img{
+	width: 300px;
+
+}
+
+#images {
+
+}
+
+#ourwork{
+	width: 200px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+#arrow{
+	width: 40px;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
