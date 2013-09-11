@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Agency</title>
+		<title>CSS Practice</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<link rel="icon" type="image/ico" href="favicon.ico"/>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	</head>
-
 	<body>
-		<header>
-			<div id="mid_header" class="clearfix">
 
-				<img id="logo" src="logo.png">
-				<div id="links">
-					<a href="#">home</a>
-					<a href="#">work</a>
-					<a href="#">services</a>
-					<a href="#">team</a>
-					<a href="#">news</a>
-					<a href="#">contact</a>
+		<nav class="topmenu clearfix">
+			<img id="logo" src="images/logo.png"/>
+			<ul class="navbar clearfix">
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">WORK</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">EXPERIENCE</a></li>
+				<li><a href="#">Hire me</a></li>
+			</ul>
+		</nav>
+
+
+		<div class="body">
+			<div id="nerd" class="clearfix">
+				<div id="main_image">
+					<img src="images/profile-pic.png">
 				</div>
+
+				<div class="main_text clearfix">
+					<header>
+						<h1>John Doe McFly</h1>
+					</header>
+					<h2>
+						Front-end developer, coffee lover & part-time photographer.
+					</h2>
+					<p>
+						Hi there. I'm a front-end developer with over 11 years experience.  I have a passion for details and visual quality. Experience on handling ambitious deadlines, organized and a good team-player.
+					</p>
+					<button type="button">FIND OUT MORE <i class="icon-angle-down"></i></button>
+				</div>
+				
 			</div>
-		</header>
 
+			<div class="body2">
+			<img src="images/companies.png">
 
-
-		
-		
-		<div id="main">
-
-			<h3><span>|</span> OUR WORK</h3>
-
-			<div id="images">
-				<figure>
-					<img src="portfolio1.jpg">
-					<figcaption>Project Title</figcaption>
-				</figure>
-			
-				<figure>
-					<img src="portfolio2.jpg">
-					<figcaption>Project Title</figcaption>
-				</figure>
-
-				<figure>
-					<img src="portfolio3.jpg">
-					<figcaption>Project Title</figcaption>
-				</figure>
-
-				<figure>
-					<img src="portfolio4.jpg">
-					<figcaption>Project Title</figcaption>
-				</figure>
-
-				<figure>
-					<img src="portfolio5.jpg">
-					<figcaption>Project Title</figcaption>
-				</figure>
-
-				<figure>
-					<img src="portfolio6.jpg">
-					<figcaption>Project Title</figcaption>
-				</figure>
-			</div>
+		</div>
 		</div>
 
-		<footer>
-			<img src="arrow.png" id="arrow">
-		</footer>
-			
 		
 	</body>
 </html>

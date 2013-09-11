@@ -1,105 +1,162 @@
-body{
-	background: url("background.jpg");
-	background-size: 100%;
-	margin: 0;
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700|Kaushan+Script|Open+Sans:800,700,600,500,400,300);
+
+/****** Header ******/
+.topmenu{
+	background-color: #f4f5f9;
+	padding-left: 110px;
+	padding-right: 110px;
+	max-width: 100%;
+	min-width: 1000px;
 }
 
-header{
-	background-color: grey;
-	background: url("head.png");
-	background-repeat:repeat-x;
-}
-
-h3{
-	font-size: 40px;
-	font-weight: 900;
-	color: white;
-	font-style: arial;
-}
-
-span {
-	color: red;
-}
-
-figure {
+#logo {
+	margin-top: 10px;
 	float: left;
-	margin: 0px;
-	background-color: white;
-
-	margin: 10px 20px 10px 0;
+	height: 70px;
+	cursor: pointer;
 }
 
-figcaption {
-	background-color: white;
-	color: grey;
-	width: 300px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	text-align: center;
+.navbar{
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	float: right;
 
 }
 
-img {
-	margin: 0px;
+.navbar li {
+	list-style: none;
+	float: left;
+	background: #f4f5f9;
+	vertical-align: top;
+	padding: 30px 17px 35px 17px;
+
+	cursor: pointer;
+}
+.navbar li:hover {
+	background: white;
 }
 
-#mid_header{
-	width: 1257px;
+.navbar li a{
+	text-decoration: none;
+	color: #555;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 20px;
+}
+
+/*HIRE ME*/
+.navbar li:last-child{
+	background: #42abbc;
+	margin-left: 10px;
+	border-radius: 50%;
+
+	-webkit-transform: scale(.8,.8) rotate(-20deg);
+	-moz-transform: scale(.8,.8) rotate(-20deg);
+	transform: scale(.8,.8) rotate(-20deg);
+
+	-webkit-transition: -webkit-transform .5s;
+	transition: transform .5s;
+}
+
+.navbar li:last-child a{
+	color: white;
+	font-family: 'Kaushan Script', cursive;
+}
+
+/*Hire me button animation*/
+.navbar li:last-child:hover{
+	-webkit-transform: translate(3px,0px);
+	transform: translate(3px,0px);
+}
+
+
+
+/****** BODY ******/
+.body{
+	background: #4b539a;
+	min-width: 1220px;
+	box-shadow: inset 0 3px 4px #262a56;
+}
+
+#nerd {
+
+	width: 1000px;
 	margin: 0 auto;
 }
 
-#logo{
-	margin-right: 30%;
+#main_image img{
+	height: 250px;
+	border: 3px solid;
+	border-radius: 50%;
+	color: #6970aa;
 	float: left;
-	height: 63px;
+	margin-right: 40px;
+	margin-top:40px;
 }
 
-a{
-	text-decoration: none;
-	color: black;
-	font-family: Arial;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 14px;
-	padding: 23px 10px 24px 10px;
-	float: left;
-	vertical-align: top;
-	height: 100%;
-}
-
-a:hover{
-	background-color: #1e1e1e;
-	color: white;
-}
-
-#main {
-	margin-left: 50px;
-}
-
-
-#main img{
-	width: 300px;
-
-}
-
-#images {
-
-}
-
-#ourwork{
-	width: 200px;
-	margin-top: 50px;
-	margin-left: 50px;
-}
-
-#arrow{
-	width: 40px;
+.main_text{
+	width: 60%;
 	float: right;
-	position: fixed;
-	bottom: 0;
-	right: 10px;
+	padding-bottom: 20px;
 }
 
+#nerd header{
+	float: left;
+	color: white;
+	font-size: 30px;
+}
+#nerd h1 {
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+#nerd header, h2, p, button{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#nerd button {
+	width:200px;
+	height: 40px;
+	border-radius: 4px;
+	color: #3e4163;
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FCFBFE), color-stop(1, #D2D5F4));
+	/* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #FCFBFE 0%, #D2D5F4 100%);
+    font-size: 16px;
+    font-weight: 700;
+}
+.icon-angle-down {
+	font-size: 16px;
+    font-weight: 700;
+}
+
+
+#nerd h2 {
+	color: #2b2d6a;
+	font-size: 30px;
+	font-weight: 400;
+}
+#nerd p{
+	color: #d7d1ff;
+	margin-bottom: 30px;
+	font-weight: 100;
+}
+.body2{
+	width: 100%;
+}
+
+.body2 img{
+	max-width: 100%;
+	float: left;
+
+	height: auto;
+}
+
+
+/******CLEARFIX******/
 .clearfix:before,
 .clearfix:after {
   content: " ";
