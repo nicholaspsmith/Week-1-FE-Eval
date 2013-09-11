@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700|Kaushan+Script|Open+Sans:800,700,600,500,400,300);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700|Kaushan+Script|Open+Sans:800,700,600,500,400,300,200,100);
 
 /****** Header ******/
 .topmenu{
@@ -152,9 +152,28 @@
 	max-width: 100%;
 	float: left;
 
-	height: auto;
 }
 
+.body3{
+	max-width: 100%;
+	background: white;
+	padding-top: 10px;
+	float: left;
+}
+.body3 h1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	color: #2b2d6a;
+}
+
+.body3 img{
+	width: 100%;
+}
+.body3wrapper {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
 
 /******CLEARFIX******/
 .clearfix:before,
